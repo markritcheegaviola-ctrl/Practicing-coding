@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+              <!--V1SION WAS HERE-->
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>v1sion's first website</title>
+     <style>
+
+      body{
+        background-color: black;
+        background-image: url('images/1270167.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 15%;
+        height: 1000hv;
+      }
+         
+
+      h1{
+        border: 5px solid black;
+        border-radius: 30px;
+        color: black;
+        font-family: "Press start 2P";
+        font-style: italic;
+        padding: 20px;
+        width: fit-content;
+        margin: auto;
+      }
+
+      .Tiktok{
+        border: 3px solid black;
+        font-family: "Press start 2P";
+        border-radius: 30px;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        height: 1000hv;
+        text-align: center;
+        position: fixed;
+        cursor: pointer;
+        bottom: 190px;
+        right: 1750px;
+      }
+
+      .Roblox{
+        border: 3px solid black;
+        font-family: "Press start 2P";
+        border-radius: 30px;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        height: 1000hv;
+        text-align: center;
+        position: fixed;
+        cursor: pointer;
+        bottom: 140px;
+        right: 1750px;
+      }
+
+      .Discord{
+        border: 3px solid black;
+        font-family: "Press start 2P";
+        border-radius: 30px;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        height: 1000hv;
+        text-align: center;
+        position: fixed;
+        cursor: pointer;
+        bottom: 90px;
+        right: 1735px;
+      }
+
+      .Spotify{
+        border: 3px solid black;
+        font-family: "Press start 2P";
+        border-radius: 30px;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        height: 1000hv;
+        text-align: center;
+        position: fixed;
+        cursor: pointer;
+        bottom: 40px;
+        right: 1735px;
+      }
+
+
+      img {
+        position: fixed;
+        width: 100px;
+      }
+
+      .coinBtn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        bottom: 160px;
+        left: 1280px;
+      }
+
+      .meowBtn {
+        background: none;
+        border: none;
+        position: fixed;
+        bottom: 390px;
+        left: 1815px;
+        cursor: pointer;
+      }
+
+      .meow2Btn {
+        background: none;
+        border: none;
+        position: fixed;
+        cursor: pointer;
+        bottom: 360px;
+        left: 1720px;
+      }
+
+
+      a{
+        text-decoration: none;
+      }
+
+     </style>
+  </head>
+<h1>Welcome to my website son</h1>
+
+
+<a href="https://www.tiktok.com/@v1sionkrm" target="_self" title="Goat">
+<Button class="Tiktok">Tiktok</Button>
+</a>
+
+<a href="https://www.roblox.com/users/2789021957/profile" target="_self" title="roblox">
+  <button class="Roblox">Roblox</button>
+</a>
+
+<a href="https://discordapp.com/users/1056562274564833340" target="_self">
+  <button class="Discord">Discord</button>
+</a>
+
+<a href="https://open.spotify.com/user/31vicpl7yeo2se3bfk5prihxxqty" target="_self">
+  <button class="Spotify">Spotify</button>
+</a>
+
+<audio id="coinSound" src="audio/driken5482-retro-coin-3-236679.mp3"></audio>
+<button class="coinBtn" onclick="playCoinsound()">
+    <img src="images/coin-ezgif.com-gif-maker.gif" width="150px">
+</button>
+
+<script>
+  function playCoinsound() {
+   let sound = document.getElementById("coinSound");
+   sound.currentTime = 0;
+   sound.play();
+
+   let coin = document.querySelector(".coinBtn");
+   coin.style.transition = "opacity 0.5s";
+   coin.style.opacity = "0";
+   }
+</script>
+
+<audio id="meowSound" src="audio/sound_garage-cat-meow-8-fx-306184.mp3"></audio>
+<button class="meowBtn" onclick="playmeowSound()">
+ <img src="images/sipat1-ezgif.com-gif-maker.gif" title="Sipat" width="80px">
+ </button>
+
+ <script>
+  function playmeowSound() {
+    let sound = document.getElementById("meowSound");
+    sound.currentTime = 0;
+    sound.play();
+  }
+ </script>
+
+<audio id="meowSound2" src = "audio/u_6ekfl947a2-cat-meow-297927.mp3"></audio>
+<button class="meow2Btn" onclick="playmeowSound2()">
+ <img src = "images/mingbai.gif" title="Rest in peace ming">
+</button>
+
+<script>
+  function playmeowSound2() {
+    let sound = document.getElementById("meowSound2");
+    sound.currentTime = 0;
+    sound.play();
+  }
+</script>
+
+
+</body>
+</html>
